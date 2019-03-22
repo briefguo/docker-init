@@ -1,5 +1,4 @@
-# docker-init
-docker-init.sh
+# docker-init on CentOS
 
 ## Start
 
