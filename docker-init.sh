@@ -6,6 +6,8 @@ sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/cen
 sudo yum makecache fast;
 sudo yum -y install docker-ce;
 sudo systemctl start docker;
+# auto run when reboot
+sudo systemctl enable docker.service
 
 # docker-compose install
 sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose;
